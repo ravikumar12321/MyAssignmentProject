@@ -1,14 +1,22 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
+import { FailureAlert } from './failureAlert/failureAlert.component';
+import { SuccessAlert } from './successAlert/successAlert.component';
+
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FailureAlert,
+    SuccessAlert
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
